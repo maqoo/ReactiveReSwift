@@ -11,6 +11,9 @@
  that you do not use this observable and instead use an observable from a full FRP library.
  The existence of this class is to make ReactiveReSwift fully functional without third party libararies.
  */
+
+import Foundation
+
 public class ObservableProperty<ValueType>: ObservablePropertyType {
     public typealias DisposableType = ObservablePropertySubscriptionReferenceType
     public typealias ObservablePropertySubscriptionReferenceType = ObservablePropertySubscriptionReference<ValueType>
